@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-color: #222;
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-size: 2.8em;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+
+header h1, a{
+    color: #00e0ff;
+    transition: 0.2s ease-in-out;
+}
+
+header h1:hover, a:hover{
+    color: #fff;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    height: 65px;
+}
+
+.calculadora{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.calculadora h1{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+
+.botao:hover{
+    background-color: black;
+    transition: 0.4s;
+}
+
+#resultado{
+    background-color: white;
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    margin-left: 10px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+}
